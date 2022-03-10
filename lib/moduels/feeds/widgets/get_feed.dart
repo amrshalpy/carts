@@ -27,6 +27,7 @@ Widget getFeed(PostModel post) {
               const SizedBox(
                 width: 10,
               ),
+              //hello everybody
               Column(
                 children: [
                   customText(
