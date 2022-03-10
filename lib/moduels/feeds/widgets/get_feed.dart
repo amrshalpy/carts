@@ -19,7 +19,7 @@ Widget getFeed(PostModel post) {
           padding: const EdgeInsets.all(8.0),
           child: Row(
             children: [
-              CircleAvatar(
+              const CircleAvatar(
                 backgroundImage: NetworkImage(
                   'https://img.freepik.com/free-photo/portrait-shocked-brunet-european-man-stares-surprisingly-camera-keeps-eyes-widely-opened-wears-round-spectacles-sweater-sees-something-breathtaking-isolated-beige-studio-background_273609-56718.jpg?w=740',
                 ),
@@ -49,20 +49,20 @@ Widget getFeed(PostModel post) {
                   ),
                 ],
               ),
-              Spacer(),
+              const Spacer(),
               PopupMenuButton(
-                  icon: Icon(Icons.more_vert),
+                  icon: const Icon(Icons.more_vert),
                   onCanceled: () {},
                   itemBuilder: (BuildContext context) => [
                         PopupMenuItem(
                           child: InkWell(
                             onTap: () {},
-                            child: Text('update'),
+                            child: const Text('update'),
                           ),
                           value: 1,
                         ),
                         PopupMenuItem(
-                          child: InkWell(onTap: () {}, child: Text('delete')),
+                          child: InkWell(onTap: () {}, child: const Text('delete')),
                           value: 2,
                         ),
                       ]),
@@ -82,20 +82,20 @@ Widget getFeed(PostModel post) {
             width: double.infinity,
           ),
         ),
-        Padding(
-          padding: const EdgeInsets.all(10),
-          child: const ReadMoreText(
+        const Padding(
+          padding: EdgeInsets.all(10),
+          child: ReadMoreText(
             'text texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext',
-            style: const TextStyle(
+            style: TextStyle(
               fontSize: 16,
               fontWeight: FontWeight.w600,
             ),
-            lessStyle: const TextStyle(
+            lessStyle: TextStyle(
               fontSize: 16,
               color: Colors.blue,
               fontWeight: FontWeight.normal,
             ),
-            moreStyle: const TextStyle(
+            moreStyle: TextStyle(
               fontSize: 16,
               color: Colors.blue,
               fontWeight: FontWeight.normal,
@@ -106,7 +106,7 @@ Widget getFeed(PostModel post) {
             trimMode: TrimMode.Line,
           ),
         ),
-        Divider(
+        const Divider(
           thickness: 1,
           height: 10,
         ),
@@ -116,13 +116,13 @@ Widget getFeed(PostModel post) {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Row(
-                children: [
+                children: const [
                   Text('100'),
                   Icon(Icons.favorite_border),
                 ],
               ),
               Row(
-                children: [
+                children: const [
                   Text('100'),
                   Icon(Icons.comment),
                 ],
@@ -130,7 +130,7 @@ Widget getFeed(PostModel post) {
             ],
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 20,
         ),
         Padding(
@@ -139,19 +139,19 @@ Widget getFeed(PostModel post) {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Row(
-                children: [
+                children: const [
                   Text('Like'),
                   Icon(Icons.favorite_border),
                 ],
               ),
               Row(
-                children: [
+                children: const [
                   Text('Comment'),
                   Icon(Icons.comment),
                 ],
               ),
               Row(
-                children: [
+                children: const [
                   Text('Share'),
                   Icon(Icons.share),
                 ],
@@ -159,7 +159,7 @@ Widget getFeed(PostModel post) {
             ],
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 10,
         ),
       ],
